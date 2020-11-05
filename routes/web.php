@@ -25,4 +25,4 @@ Route::get('/plugins', function() {
 Route::post('/plugins', [PluginController::class, 'guardar']);
 
 Route::get('eventos/index', [EventosController::class, 'eventos/index']); 
-Route::resource('eventos','EventosController');
+Route::resource('eventos/index','EventosController');
